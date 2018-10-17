@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Reem+Kufi);
+@import url(https://fonts.googleapis.com/css?family=Sriracha);
+
+.App {
+    text-align: center;
+  }
+  
+.App-Header {
+    font-family: 'Reem+Kufi' , sans-serif ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff ;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+}
+
+.Parallax-bg {
+    background-color: #282c34;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
