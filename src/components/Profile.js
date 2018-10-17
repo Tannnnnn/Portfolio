@@ -5,7 +5,7 @@ export class Profile extends Component {
     return (
       <div className="App">
         <header className="App-Header">
-            Hi , I'm Tan <br /><small>\(^o^)/</small>
+            Tan 🖤 Oily<br /><small>\(^o^)/</small>
         </header>
       </div>
     )
