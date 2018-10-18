@@ -13,12 +13,13 @@ class App extends Component {
           element.scrollIntoView({behavior: 'smooth'});
     }
     window.onscroll = function() {scrollFunction()};
-
     const scrollFunction = () => {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             document.getElementById("myBtn").style.display = "block";
+            document.getElementById("myTextAbout").style.display = "block";
         } else {
             document.getElementById("myBtn").style.display = "none";
+            document.getElementById("myTextAbout").style.display = "none";
         }
     }
 

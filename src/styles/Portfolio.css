@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 @import url(https://fonts.googleapis.com/css?family=Reem+Kufi);
 @import url(https://fonts.googleapis.com/css?family=Sriracha);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,600);
 
 .App {
     text-align: center;
@@ -258,3 +259,45 @@
   #myBtn:hover {
     background-color: transparent;
   }
+
+  #myTextAbout {
+    display: none;
+    font-size: 3vw;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h1 { 
+  font: bold 300% Sriracha, monospace;
+  font-size: 4vw;
+	border-right: .1em solid rgb(221, 221, 221);
+	width: 16.5em; 
+	width: 32ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end),
+	blink-caret .5s step-end infinite alternate;
+}
+
+.animate-center {
+  position: relative;
+  -webkit-animation-name: animatecenter;
+  -webkit-animation-duration: 7s;
+  animation-name: animatecenter;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes animatecenter {
+  from { opacity:0 } 
+  to { opacity:1 }
+}
+
+@keyframes animatecenter { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
