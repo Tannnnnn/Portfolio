@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 export class Profile extends Component {
   render() {
+    
     return (
       <div>
-        <div className="App">
+        <div className="App" id="Home">
           <header className="App-Header">
               <div class="text animate-bottom">
                 <div class="r">Hello,I'm...Tan! <br/>
@@ -25,7 +26,7 @@ export class Profile extends Component {
           </header>
         </div>
         <p class="scroll-down animate-bottom">
-          <a href="#complements" class="animate"></a>
+          <a class="animate" onClick={()=>this.props.handleClickScroll("About")}></a>
         </p>
       </div>
     )

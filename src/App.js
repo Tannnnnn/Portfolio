@@ -4,13 +4,34 @@ import './styles/Portfolio.css';
 import './styles/Parallax.scss';
 import Profile from './components/Profile.js'
 import Parallax from './components/Parallax.js'
+import About from './components/About.js'
 
 class App extends Component {
   render() {
+    const handleClickScroll = (Scroll) => {
+      const element = document.getElementById(`${Scroll}`);
+          element.scrollIntoView({behavior: 'smooth'});
+    }
+    window.onscroll = function() {scrollFunction()};
+
+    const scrollFunction = () => {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    const topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     return (
       <div className="Parallax-bg">
         <Parallax />
-        <Profile />
+        <Profile handleClickScroll={handleClickScroll}/>
+        <About scrollFunction={scrollFunction}  handleClickScroll={handleClickScroll}/>
       </div>
     );
   }

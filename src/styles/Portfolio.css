@@ -183,7 +183,7 @@
     width: 100px;
     height: 100px;
     margin-left: -50px;
-    margin-top: 210px;
+    margin-top: 190px;
   }
   .scroll-down a {
     display: block;
@@ -241,4 +241,20 @@
   }
   .scroll-down a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  #myBtn:hover {
+    background-color: transparent;
   }
