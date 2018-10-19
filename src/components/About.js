@@ -11,9 +11,7 @@ export class About extends Component {
       if( helloTime >= 13 && helloTime < 20 ){
         return "☁ Good Evening ☁"
       }
-      if( helloTime >= 20 && helloTime < 6){
         return "☾ Good Night ☽"
-      }
     }
     const time = new Date();
     const helloTime = time.getHours();
@@ -22,7 +20,7 @@ export class About extends Component {
         <div className="App-Header">
           <span id="myTextAbout">
             <center className="animate-center">
-              <h1>{checkTime()}, Lady and Gentleman! ^^</h1>
+              <h1>{checkTime()}, My name's Tan Kitpakorn! ^^</h1>
             </center> 
           </span>
         </div>

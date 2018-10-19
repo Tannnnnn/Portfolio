@@ -184,7 +184,7 @@
     width: 100px;
     height: 100px;
     margin-left: -50px;
-    margin-top: 190px;
+    margin-top: 110px;
   }
   .scroll-down a {
     display: block;
@@ -300,4 +300,19 @@ h1 {
 @keyframes animatecenter { 
   from{ opacity:0 } 
   to{ opacity:1 }
+}
+
+.button-font {
+  font-family : Sriracha, monospace !important;
+}
+
+.hidden-an {
+  display: none ;
+}
+
+@media only screen and (max-width: 400px) {
+  .field {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
 }

@@ -1,39 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './styles/Portfolio.css';
 import './styles/Parallax.scss';
 import Profile from './components/Profile.js'
 import Parallax from './components/Parallax.js'
-import About from './components/About.js'
+import Anonymous from './components/Anonymous.js'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 class App extends Component {
-  render() {
-    const handleClickScroll = (Scroll) => {
-      const element = document.getElementById(`${Scroll}`);
-          element.scrollIntoView({behavior: 'smooth'});
-    }
-    window.onscroll = function() {scrollFunction()};
-    const scrollFunction = () => {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            document.getElementById("myBtn").style.display = "block";
-            document.getElementById("myTextAbout").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-            document.getElementById("myTextAbout").style.display = "none";
-        }
-    }
-
-    const topFunction = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
+  render() {    
     return (
       <div className="Parallax-bg">
         <Parallax />
-        <Profile handleClickScroll={handleClickScroll}/>
-        <About scrollFunction={scrollFunction}  handleClickScroll={handleClickScroll}/>
+        <Router>
+          <div>
+              <Route exact path="/" component={Anonymous} />
+              <Route exact path="/Profile/:user" component={Profile} />
+              <Redirect to="/" />
+          </div>
+        </Router>
       </div>
+      
     );
   }
 }
