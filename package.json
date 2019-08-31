@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tannnnnn.github.io/Randomphone/",
+  "homepage": "https://tannnnnn.github.io/Portfolio/",
   "dependencies": {
     "bulma": "^0.7.2",
     "gh-pages": "^2.0.1",
