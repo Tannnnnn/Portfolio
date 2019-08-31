@@ -17,19 +17,22 @@ export class Anonymous extends Component {
   handleSetRandomValue = () => {
       const { selectCountry } = this.state
       const max = selectCountry === 'SP' ? 99999999 : 999999999
+      const min = selectCountry === 'SP' ? 10000000 : 100000000
       const fnumber = selectCountry === 'SP' ? '+65' : '+855'
-      const data = Math.floor(Math.random() * Math.floor(max))
-      this.setState({ randomValue : fnumber + data })
-  }
-
-  handleCopyText = () => {
+      const data = Math.floor(Math.random() * (max - min) + min)
+      this.setState({ 
+        randomValue : `${fnumber}${data}`
+      })
       const copyText = document.getElementById("randomInput");
+      copyText.value = `${fnumber}${data}`
       copyText.select();
       document.execCommand("copy");
-      this.setState({ copyText : `ก็อปปี้สำเร็จ!`})
-      setTimeout(() => {
-          this.setState({ copyText : '' })
-      }, 3000);
+      if (copyText.value) {
+        this.setState({ copyText : `ก็อปปี้สำเร็จ!` })
+        setTimeout(() => {
+            this.setState({ copyText : '' })
+        }, 2000);
+      }
   }
 
 
@@ -59,9 +62,6 @@ export class Anonymous extends Component {
                         Random
                     </a>
                 </p>
-                <a className="button is-warning" data-tooltip="Tooltip Text" onClick={this.handleCopyText}>
-                    Copy
-                </a>
             </div>
             <center>
               <h2 className="title" style={{ color : "#fff" }}>
