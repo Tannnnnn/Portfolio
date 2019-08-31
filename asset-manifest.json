@@ -1,15 +1,15 @@
 {
-  "main.css": "/randomphone/static/css/main.c0437095.chunk.css",
-  "main.js": "/randomphone/static/js/main.161be831.chunk.js",
-  "main.js.map": "/randomphone/static/js/main.161be831.chunk.js.map",
-  "static/css/1.caf465aa.chunk.css": "/randomphone/static/css/1.caf465aa.chunk.css",
-  "static/js/1.828595e0.chunk.js": "/randomphone/static/js/1.828595e0.chunk.js",
-  "static/js/1.828595e0.chunk.js.map": "/randomphone/static/js/1.828595e0.chunk.js.map",
-  "runtime~main.js": "/randomphone/static/js/runtime~main.586492ce.js",
-  "runtime~main.js.map": "/randomphone/static/js/runtime~main.586492ce.js.map",
-  "static/css/main.c0437095.chunk.css.map": "/randomphone/static/css/main.c0437095.chunk.css.map",
-  "static/css/1.caf465aa.chunk.css.map": "/randomphone/static/css/1.caf465aa.chunk.css.map",
-  "index.html": "/randomphone/index.html",
-  "precache-manifest.6b37096eac8146c9b278f88d6b7116a5.js": "/randomphone/precache-manifest.6b37096eac8146c9b278f88d6b7116a5.js",
-  "service-worker.js": "/randomphone/service-worker.js"
+  "main.css": "/Portfolio/static/css/main.f786de5f.chunk.css",
+  "main.js": "/Portfolio/static/js/main.2630b96a.chunk.js",
+  "main.js.map": "/Portfolio/static/js/main.2630b96a.chunk.js.map",
+  "static/css/1.caf465aa.chunk.css": "/Portfolio/static/css/1.caf465aa.chunk.css",
+  "static/js/1.828595e0.chunk.js": "/Portfolio/static/js/1.828595e0.chunk.js",
+  "static/js/1.828595e0.chunk.js.map": "/Portfolio/static/js/1.828595e0.chunk.js.map",
+  "runtime~main.js": "/Portfolio/static/js/runtime~main.3b961160.js",
+  "runtime~main.js.map": "/Portfolio/static/js/runtime~main.3b961160.js.map",
+  "static/css/1.caf465aa.chunk.css.map": "/Portfolio/static/css/1.caf465aa.chunk.css.map",
+  "static/css/main.f786de5f.chunk.css.map": "/Portfolio/static/css/main.f786de5f.chunk.css.map",
+  "index.html": "/Portfolio/index.html",
+  "precache-manifest.d9eb77bd7e586deabaac2de240101c10.js": "/Portfolio/precache-manifest.d9eb77bd7e586deabaac2de240101c10.js",
+  "service-worker.js": "/Portfolio/service-worker.js"
 }
