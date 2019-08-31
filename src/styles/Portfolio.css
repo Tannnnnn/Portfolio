@@ -275,13 +275,17 @@ h1 {
   font: bold 300% Sriracha, monospace;
   font-size: 4vw;
 	border-right: .1em solid rgb(221, 221, 221);
-	width: 16.5em; 
-	width: 32ch;
+	width: 13em; 
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
 	-webkit-animation: typing 2s steps(21, end),
 	blink-caret .5s step-end infinite alternate;
+}
+
+h2 { 
+  font: bold 300% Sriracha, monospace;
+  font-size: 4vw;
 }
 
 .animate-center {
